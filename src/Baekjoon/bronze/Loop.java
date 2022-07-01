@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 public class Loop {
     public static void main(String[] args) {
-        QThree();
+        QSeven();
     }
 
     /**
@@ -73,6 +73,77 @@ public class Loop {
 
          bw.flush();    // 버퍼 비우고
          bw.close();    // 닫기
+    }
+
+    /**
+     * 2741 N찍기
+     */
+    public static void QFive() {
+        int n = 0;
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+//        while(n >= 1){
+//            System.out.println(n);
+//            n--;
+//        }
+        for (int i = 1; i<=n; i++){
+            System.out.println(i);
+        }
+    }
+
+    /**
+     * 2742 N찍기
+     */
+    public static void QSix() {
+        int n = 0;
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+
+        for (int i = n; i > 0; i--){
+            System.out.println(n);
+            n--;
+        }
+    }
+
+    /**
+     * 2438 별찍기
+     *
+     * *
+     * * *
+     * * * *
+     * * * * *
+     */
+    public static void QSeven(){
+        int n = 0;
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+
+        for(int i = 1; i <= n; i++){
+            for(int cnt = 1; cnt <= i; cnt++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+
+    /**
+     * 2439 별찍기
+           *
+         * *
+       * * *
+     * * * *
+     */
+    public static void QEight(){
+        int n = 0;
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+
+        for(int i = 1; i <= n; i++){
+            for(int cnt = 1; cnt < i; cnt++){
+                System.out.print(" ");
+            }
+            System.out.print("\n");
+        }
     }
 
 }

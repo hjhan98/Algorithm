@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 public class Loop {
     public static void main(String[] args) {
-        QSeven();
+        QEight();
     }
 
     /**
@@ -139,9 +139,10 @@ public class Loop {
         n = scan.nextInt();
 
         for(int i = 1; i <= n; i++){
-            for(int cnt = 1; cnt < i; cnt++){
+            for(int cnt = 1; cnt <= n-i; cnt++)
                 System.out.print(" ");
-            }
+            for(int star = 1; star <= i; star++)
+                System.out.print("*");
             System.out.print("\n");
         }
     }

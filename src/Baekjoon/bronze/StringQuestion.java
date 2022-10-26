@@ -56,8 +56,8 @@ public class StringQuestion {
                 arr[ss] = i;
             }
         }
-        for(int i = 0; i<arr.length; i++){
-            System.out.print(arr[i]+" ");
+        for (int var:arr) {
+            System.out.print(var+" ");
         }
     }
 }
